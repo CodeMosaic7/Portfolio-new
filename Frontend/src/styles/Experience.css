@@ -1,0 +1,119 @@
+.experience {
+  width: 100%;
+  padding: 5rem 1.5rem;
+  background: linear-gradient(135deg, #020617, #1e1b4b);
+}
+
+.experience-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Titles */
+.experience-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-subtitle {
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 3.5rem;
+  color: var(--text-muted);
+}
+
+/* Cards */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 1.8rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  border-color: #a78bfa;
+  box-shadow: 0 25px 70px rgba(167, 139, 250, 0.25);
+}
+
+/* Header */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.experience-role {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.experience-company {
+  color: #c4b5fd;
+  font-weight: 500;
+}
+
+/* Meta */
+.experience-meta {
+  text-align: right;
+}
+
+.experience-type {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background: rgba(167, 139, 250, 0.15);
+  color: #c4b5fd;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  margin-bottom: 0.4rem;
+}
+
+.experience-period {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Achievements */
+.experience-points {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience-points li {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.6rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.experience-points li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #a78bfa;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .experience-meta {
+    text-align: left;
+  }
+}

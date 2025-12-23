@@ -1,0 +1,19 @@
+:root {
+  --bg-main: #0b1220;
+  --bg-surface: #121a2f;
+  --bg-card: #18223a;
+
+  --text-primary: #e6ecf3;
+  --text-secondary: #a9b2c3;
+  --text-muted: #7a859e;
+
+  --accent: #4da3ff;
+  --accent-hover: #6bd6ff;
+
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --container-width: 1200px;
+  --radius: 12px;
+}

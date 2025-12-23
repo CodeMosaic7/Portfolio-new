@@ -1,0 +1,77 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(11, 18, 32, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1f2937;
+  z-index: 100;
+  color: var(--text-primary);
+  max-height: 80%;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+}
+
+/* Desktop Nav */
+.nav-desktop {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-desktop a {
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.nav-desktop a:hover {
+  color: var(--accent);
+}
+
+/* Mobile Button */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+/* Mobile Nav */
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-surface);
+  border-top: 1px solid #1f2937;
+}
+
+.nav-mobile a {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

@@ -1,0 +1,104 @@
+.education {
+  width: 100%;
+  padding: 5rem 1.5rem;
+  background: linear-gradient(135deg, #1e1b4b, #020617);
+}
+
+.education-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Titles */
+.education-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-subtitle {
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 3.5rem;
+  color: var(--text-muted);
+}
+
+/* Cards */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-card {
+  display: flex;
+  gap: 1.4rem;
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 1.8rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  border-color: #a78bfa;
+  box-shadow: 0 25px 70px rgba(167, 139, 250, 0.25);
+}
+
+/* Icon */
+.education-icon {
+  padding: 0.9rem;
+  border-radius: 14px;
+  background: rgba(167, 139, 250, 0.15);
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  color: #c4b5fd;
+  height: fit-content;
+}
+
+/* Content */
+.education-degree {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.education-specialization {
+  color: #c4b5fd;
+  font-weight: 500;
+  margin: 0.4rem 0;
+}
+
+.education-institute {
+  color: var(--text-secondary);
+  margin-bottom: 0.8rem;
+}
+
+/* Meta */
+.education-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.education-badge {
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(167, 139, 250, 0.15);
+  color: #c4b5fd;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .education-card {
+    flex-direction: column;
+  }
+}

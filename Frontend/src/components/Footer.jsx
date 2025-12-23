@@ -1,13 +1,15 @@
-const Footer=()=>{
-    return (
-        <footer className="bg-slate-950 border-t border-slate-800 py-8 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400">
-            © 2025 Manika Srivastava. Built with React & Tailwind CSS
-          </p>
-        </div>
-      </footer>
-    )
-}
+import "../styles/Footer.css";
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <p className="footer-text">
+          © 2025 <span>Manika Srivastava</span>. Built with React.
+        </p>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

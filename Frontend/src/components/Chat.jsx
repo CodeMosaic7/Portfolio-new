@@ -1,16 +1,24 @@
+import "../styles/Chat.css";
+
 const Chat = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4">
-      <h1 className="text-2xl font-bold mb-4">Chat With my digital twin here!</h1>
-      <div className="border border-gray-300 rounded p-4 h-64 overflow-y-auto">
-        {/* Chat messages will go here */}
+    <section className="chat">
+      <h1 className="chat-title">Chat with my digital twin 🤖</h1>
+
+      <div className="chat-box">
+        <div className="chat-messages">
+          {/* Chat messages will go here */}
+        </div>
+
+        <input
+          type="text"
+          placeholder="Type your message..."
+          className="chat-input"
+        />
+
+        <button className="chat-send">Send</button>
       </div>
-      <input
-        type="text"
-        placeholder="Type your message..."
-        className="w-full mt-4 p-2 border border-gray-300 rounded"
-      />
-    </div>
+    </section>
   );
 };
 
