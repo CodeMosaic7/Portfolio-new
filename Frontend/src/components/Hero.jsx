@@ -23,7 +23,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-visual">
-        <img src="/image.svg" alt="Hero Illustration" />
+        <img src="../image.svg" alt="Hero Illustration" />
       </div>
     </section>
   );
