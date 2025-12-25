@@ -16,4 +16,13 @@
 
   --container-width: 1200px;
   --radius: 12px;
+
+  --heading-font-size: 3rem;
+  --heading-font-weight: 700;
+
+  --subheading-font-size: 2rem;
+  --subheading-font-weight: 600;
+
+  --text-font-size: 1rem;
+  --text-font-weight: 400;
 }

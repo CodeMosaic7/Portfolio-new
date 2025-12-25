@@ -1,7 +1,7 @@
 .projects {
   width: 100%;
   padding: 5rem 1.5rem;
-  background: var(--bg-main);
+  /* background: var(--bg-main); */
 }
 
 .projects-container {
@@ -13,7 +13,7 @@
   text-align: center;
   font-size: 2.6rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #a78bfa, #f472b6);
+  background: var(--text-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -34,18 +34,19 @@
 
 /* Card */
 .project-card {
-  background: rgba(30, 41, 59, 0.6);
+  /* background: rgba(30, 41, 59, 0.6); */
+  background-color: var(--bg-surface);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 1.8rem;
-  border: 1px solid rgba(148, 163, 184, 0.15);
+  border: 1px solid rgba(0, 69, 165, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: #a78bfa;
-  box-shadow: 0 30px 80px rgba(167, 139, 250, 0.2);
+  border-color: var(--accent);
+  box-shadow: 0 30px 80px rgba(5, 78, 146, 0.2);
 }
 
 /* Header */
@@ -75,11 +76,12 @@
 }
 
 .project-achievements li {
-  font-size: 0.9rem;
+  font-size: var(--text-font-size);
   color: var(--text-secondary);
   margin-bottom: 0.6rem;
   position: relative;
   padding-left: 1.2rem;
+  line-height: 1.2;
 }
 
 .project-achievements li::before {
@@ -102,7 +104,9 @@
   font-size: 0.75rem;
   border-radius: 999px;
   background: rgba(167, 139, 250, 0.15);
-  color: #c4b5fd;
+  /* Original color, but does not go well the design theme */
+  /* color: #c4b5fd; */
+  color: var(--text-secondary);
   border: 1px solid rgba(167, 139, 250, 0.35);
 }
 

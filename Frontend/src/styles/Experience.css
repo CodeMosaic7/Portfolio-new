@@ -1,7 +1,7 @@
 .experience {
   width: 100%;
   padding: 5rem 1.5rem;
-  background: linear-gradient(135deg, #020617, #1e1b4b);
+  /* background: linear-gradient(135deg, #020617, #1e1b4b); */
 }
 
 .experience-container {
@@ -14,7 +14,7 @@
   text-align: center;
   font-size: 2.6rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #a78bfa, #f472b6);
+  background: var(--text-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -38,14 +38,14 @@
   backdrop-filter: blur(10px);
   border-radius: 18px;
   padding: 1.8rem;
-  border: 1px solid rgba(148, 163, 184, 0.15);
+  border: 1px solid var(--accent);
   transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-card:hover {
   transform: translateY(-6px);
-  border-color: #a78bfa;
-  box-shadow: 0 25px 70px rgba(167, 139, 250, 0.25);
+  border-color: var(--accent-hover);
+  box-shadow: 0 25px 70px rgba(19, 13, 104, 0.322);
 }
 
 /* Header */
@@ -64,7 +64,7 @@
 }
 
 .experience-company {
-  color: #c4b5fd;
+  color: var(--accent);
   font-weight: 500;
 }
 

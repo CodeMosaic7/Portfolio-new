@@ -10,7 +10,7 @@ import "../styles/variable.css";
 import "../styles/base.css";
 const Main=()=>{
     return(
-        <div>
+        <div className="main-container">
             <Header/>
             <Hero/>
             <Chat/>
