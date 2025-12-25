@@ -3,6 +3,7 @@
   padding: 2rem 1rem;
   background: #020617; /* deep slate */
   border-top: 1px solid rgba(148, 163, 184, 0.15);
+  max-height: 60%;
 }
 
 .footer-container {
@@ -19,4 +20,35 @@
 .footer-text span {
   color: var(--text-primary);
   font-weight: 600;
+}
+
+.footer-heading {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #2d2d45;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: #5b21b6;
+  border-color: #8b5cf6;
+  transform: translateY(-2px);
 }
