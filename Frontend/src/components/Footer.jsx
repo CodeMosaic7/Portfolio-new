@@ -3,14 +3,14 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="footer-container">
 
         <h3 className="footer-heading">Let’s Connect</h3>
 
         <div className="social-links">
           <a 
-            href="mailto:your-email@gmail.com" 
+            href="mailto:manikasrivastava084@gmail.com" 
             className="social-icon"
             aria-label="Email"
           >
@@ -19,7 +19,7 @@ const Footer = () => {
           </a>
 
           <a 
-            href="https://github.com/yourgithub" 
+            href="https://github.com/CodeMosaic7" 
             className="social-icon"
             target="_blank"
             rel="noopener noreferrer"
@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
 
           <a 
-            href="https://linkedin.com/in/yourlinkedin" 
+            href="https://in.linkedin.com/in/manika-srivastava-80328125a" 
             className="social-icon"
             target="_blank"
             rel="noopener noreferrer"

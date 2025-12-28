@@ -12,7 +12,7 @@
 /* Titles */
 .education-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: var(--heading-font-size);
   font-weight: 700;
   background: var(--text-primary);
   -webkit-background-clip: text;
@@ -24,6 +24,7 @@
   margin-top: 0.8rem;
   margin-bottom: 3.5rem;
   color: var(--text-muted);
+  font-size: var(--subheading-font-size);
 }
 
 /* Cards */
@@ -91,9 +92,9 @@
 .education-badge {
   padding: 0.3rem 0.9rem;
   border-radius: 999px;
-  background: rgba(167, 139, 250, 0.15);
-  color: #c4b5fd;
-  border: 1px solid rgba(167, 139, 250, 0.35);
+  background: rgba(139, 146, 250, 0.15);
+  color: #b5c0fd;
+  border: 1px solid rgba(142, 169, 243, 0.384);
 }
 
 /* Responsive */

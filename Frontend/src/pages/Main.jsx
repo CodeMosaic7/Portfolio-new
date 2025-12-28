@@ -5,12 +5,19 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Education from "../components/Education";
+import Cursor from "../components/Cursor";
 import Chat from "../components/Chat";
-import "../styles/variable.css";
 import "../styles/base.css";
+import "../styles/animations.css"
+import "../styles/variable.css"
+
+
 const Main=()=>{
     return(
+        <>
+        <Cursor/>
         <div className="main-container">
+            {/* <Cursor/> */}
             <Header/>
             <Hero/>
             <Chat/>
@@ -20,6 +27,7 @@ const Main=()=>{
             <Education/>
             <Footer/>
         </div>
+        </>
     )
 }
 

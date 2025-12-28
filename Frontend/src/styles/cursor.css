@@ -1,0 +1,14 @@
+.cursor-glow{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(168,85,247,0.5), transparent 60%);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  filter: blur(40px);
+  z-index: 999;
+}
+.cursor-glow.hidden {
+  display: none;
+}
