@@ -1,14 +1,19 @@
 import os
 from dotenv import load_dotenv
-from langchain_openai import OpenAIEmbeddings
-import getpass
+from langchain_ollama import OllamaEmbeddings
+from langchain_huggingface.embeddings import HuggingFaceEmbeddings
+from huggingface_hub import login
+from langchain_ollama import OllamaEmbeddings
 
+
+load_dotenv()
+
+# def initialize_embeddings(model_name="sentence-transformers/all-MiniLM-L6-v2"):
+    # """Load embeddings from HuggingFace."""
+    # login(os.getenv("HF_TOKEN"))
+    # embeddings = HuggingFaceEmbeddings(model_name=model_name)
+    # return embeddings
 def initialize_embeddings():
-
-    if not os.environ.get("OPENAI_API_KEY"):
-        os.environ["OPENAI_API_KEY"] = getpass.getpass("Enter API key for OpenAI: ")
-
-    embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
-    return embeddings
+    return OllamaEmbeddings(model="nomic-embed-text")
 
 

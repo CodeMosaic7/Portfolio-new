@@ -1,7 +1,10 @@
 from langchain.agents.middleware import dynamic_prompt, ModelRequest
+from langchain.agents import create_agent
+from .retirver import retrieve_context
+tools=[retrieve_context]
+vector_store=None
 
-@dynamic_prompt
-def prompt_with_context(request: ModelRequest) -> str:
+def prompt_with_context(request: ModelRequest, vector_store) -> str:
     """Inject context into state messages."""
     last_query = request.state["messages"][-1].text
     retrieved_docs = vector_store.similarity_search(last_query)
@@ -16,4 +19,6 @@ def prompt_with_context(request: ModelRequest) -> str:
     return system_message
 
 
-agent = create_agent(model, tools=[], middleware=[prompt_with_context])
+def agent_creation(model, tools):
+    agent = create_agent(model, tools=tools)
+    return agent
