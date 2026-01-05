@@ -17,13 +17,13 @@ const Chat = () => {
   const messagesEndRef = useRef(null);
 
   // Auto-scroll to bottom when new messages arrive
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToBottom = () => {
+  //   messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  // };
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+  // useEffect(() => {
+  //   scrollToBottom();
+  // }, [messages]);
 
   const handleSend = async () => {
     if (input.trim() && !loading) {
@@ -39,7 +39,7 @@ const Chat = () => {
       setError(null);
 
       try {
-        // Prepare messages for API (convert to required format)
+        // Prepare messages for API
         const apiMessages = [
           {
             role: "user",
@@ -48,7 +48,6 @@ const Chat = () => {
           ];
         // console.log('Prepared messages for API:', apiMessages);
         const response = await sendMessage(apiMessages);
-
         // bot response
         const botMessage = {
           id: Date.now() + 1,

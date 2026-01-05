@@ -14,8 +14,7 @@ const Hero = () => {
           I ideate, develop and deploy solutions<br /> driven by innovation and creativity.
         </p>
         <div className="hero-buttons">
-          <button className="btn-primary">View Projects</button>
-          <button className="btn-secondary">Contact Me</button>
+          <a className="btn-primary" href="#projects">View Projects</a>
         </div>
       </div>
       <div className="hero-visual">

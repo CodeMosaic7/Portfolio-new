@@ -2,12 +2,12 @@
   position: fixed;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(168,85,247,0.5), transparent 60%);
+  background: radial-gradient(circle, rgba(85, 142, 247, 0.5), transparent 80%);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
   filter: blur(40px);
-  z-index: 999;
+  z-index: 1000;
 }
 .cursor-glow.hidden {
   display: none;

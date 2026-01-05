@@ -3,7 +3,7 @@ from .vector_store import initialize_vector_store
 from .embeddings import initialize_embeddings
 @tool(response_format="content_and_artifact")
 def retrieve_context(query: str):
-    """Retrieve information answer a query."""
+    """Retrieve information to answer the query."""
     embeddings=initialize_embeddings()
     vector_store=initialize_vector_store(embeddings)
     retrieved_docs = vector_store.similarity_search(query, k=2)

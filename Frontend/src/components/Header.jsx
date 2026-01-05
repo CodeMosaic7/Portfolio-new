@@ -6,7 +6,7 @@ const Header = () => {
 
   const navLinks = [
     { href: "#about", label: "ABOUT" },
-    { href: "#chat", label: "TALK TO ME" },
+    // { href: "#chat", label: "TALK TO ME" },
     { href: "#skills", label: "SKILLS" },
     { href: "#projects", label: "PROJECTS" },
     { href: "#experience", label: "EXPERIENCE" },

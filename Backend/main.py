@@ -7,8 +7,6 @@ from schema import ChatRequest, ChatResponse
 from chatbot.llm import initialize_LLM
 from chatbot.embeddings import initialize_embeddings
 
-from fastapi import Request
-
 app = FastAPI(title="Portfolio Bot")
 app.add_middleware(
     CORSMiddleware,
@@ -35,7 +33,7 @@ async def startup_event():
 
 @app.post("/chat", response_model=ChatResponse)
 def chat_endpoint(request: ChatRequest):
-    print("Received chat request:", request)
+    print("Received chat request[DEBUG 1]:", request)
     messages = [
         {"role": m.role, "content": m.content}
         for m in request.messages
@@ -49,9 +47,3 @@ def chat_endpoint(request: ChatRequest):
         answer=answer_text,
         sources=sources
     )
-
-# @app.post("/chat")
-# async def chat(req: Request):
-#     body = await req.json()
-#     print("Received Body:", body)
-#     return {"ok": True}

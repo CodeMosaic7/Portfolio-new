@@ -17,10 +17,9 @@ const Main=()=>{
         <>
         <Cursor/>
         <div className="main-container">
-            {/* <Cursor/> */}
             <Header/>
             <Hero/>
-            <Chat/>
+            {/* <Chat/> */}
             <Skills/>
             <Projects/>
             <Experience/>
