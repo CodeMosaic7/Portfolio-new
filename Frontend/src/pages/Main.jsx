@@ -11,7 +11,6 @@ import "../styles/base.css";
 import "../styles/animations.css"
 import "../styles/variable.css"
 
-
 const Main=()=>{
     return(
         <>
